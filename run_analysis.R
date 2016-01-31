@@ -22,7 +22,7 @@ x_mean_and_std <- x[,subject_features[,1]]
 
 # Task 3
 # Using descriptive activity names to name activities in the data set
-print('Labaling activies...')
+print('Labeling activies...')
 labels <- read.table('./UCI HAR Dataset/activity_labels.txt')
 y_test <- read.table('./UCI HAR Dataset/test/y_test.txt', col.names = c('activity'))
 y_train <- read.table('./UCI HAR Dataset/train/y_train.txt', col.names = c('activity'))
@@ -36,6 +36,7 @@ for (i in 1:nrow(labels)) {
 
 # Task 4
 # Labeling data set with descriptive variable names
+print('Labeling data sets with descriptive variable names...')
 x_with_labels <- cbind(y, x)
 x_mean_and_std_with_labels <- cbind(y, x_mean_and_std)
 
@@ -48,4 +49,5 @@ subject <- rbind(subject_test, subject_train)
 
 averages <- aggregate(x, by = list(activity = y[,1], subject = subject[,1]), mean)
 # Saving averages to file
+print('Writing averages to averages.txt...')
 write.table(averages, 'averages.txt', row.names = FALSE)
