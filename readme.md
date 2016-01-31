@@ -5,3 +5,6 @@ Project includes files `CodeBook.md` (project code book) and `run_analysis.R` wh
 * Uses descriptive activity names to name the activities in the data set;
 * Appropriately labels the data set with descriptive variable names;
 * Creates a second, independent tidy data set with the average of each variable for each activity and each subject and saves it as `averages.txt`
+
+## Run Project
+Just clone this repo and execute in R enviroment `source('run_analysis.R')`
