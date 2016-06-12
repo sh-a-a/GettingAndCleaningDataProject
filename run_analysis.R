@@ -1,4 +1,4 @@
-# Check if data have been donwloaded already by checking existance of 'UCI HAR Dataset' folder. If not, then downloading it
+# Check if data have been donwloaded already by checking existence of 'UCI HAR Dataset' folder. If not, then downloading it
 # and uzip
 if (!file.exists('UCI HAR Dataset')) {
     print('Dataset not found. Downloading...')
