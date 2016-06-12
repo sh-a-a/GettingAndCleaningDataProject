@@ -7,4 +7,4 @@ Project includes files `CodeBook.md` (project code book) and `run_analysis.R` wh
 * Creates a second, independent tidy data set with the average of each variable for each activity and each subject and saves it as `averages.txt`
 
 ## Run Project
-Just clone this repo and execute in R enviroment `source('run_analysis.R')`
+Just clone this repo and execute in R environment `source('run_analysis.R')`
